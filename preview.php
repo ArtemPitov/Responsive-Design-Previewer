@@ -20,7 +20,6 @@ body { display: table-cell; vertical-align: middle; min-height: 100%; overflow: 
 .menu:hover { opacity: 1; }
 .close-url { display: none; }
 .btn-label { display: none; }
-@media (max-width: 1599px) { display: inline-block; }
 .warning { height: auto; display: none; }
 @media (max-width: 1279px) { .menu { display: none; } .warning { display: block; position: fixed; top: 0; left: 0; width: 100%; } }
 iframe { width: 100%; height: 100%; outline: 0; border: 0; }
