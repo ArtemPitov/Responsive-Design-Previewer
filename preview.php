@@ -56,7 +56,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <div class="input-group-prepend"><span class="input-group-text bg-secondary text-light border-0">Device</span></div>
 <select class="custom-select custom-select-sm rounded-right" id="device">
 
-<option class="desktop">Desktop</option>
+<option class="desktop" value="desktop">Desktop</option>
 
 <optgroup label="Common Laptop Resolutions">
 <option data-width="1366" data-height="768">Laptop - (1366 x 768)</option>
@@ -285,7 +285,14 @@ function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.
 
 	$('.close-url').on('click', function(){
 		$('.col-hide').show();
-		$('.col-hide-desktop').hide();
+		var selected = $('select#device').find(':selected').val();
+		if (selected == "desktop") {
+			$('.dimensions').hide();
+			$('.col-hide-desktop').hide();
+		} else {
+			$('.dimensions').show();
+			$('.col-hide-desktop').show();
+		}
 		$('.col-url').removeClass('col-12');
 		$('.close-url').hide();
 	});
