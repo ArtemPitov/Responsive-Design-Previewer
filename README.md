@@ -1,4 +1,4 @@
-# Responsive-Previewer-Thingy v1.0.2
+# Responsive Previewer Thingy v1.0.2
 
 A tool to help test responsive layouts
 
