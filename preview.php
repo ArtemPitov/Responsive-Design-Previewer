@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMjgvMTgh9jS1AAAAdklEQVQ4je2SsQ2AMAwEPyirpMhO2cR1NkiRzVxkmKdAIAQBjECi4UrLfr3+7UhiTa2VqgoLMUb47VBVkXM2CYgIBtPmCd8LeGAfnIgAmEJKKV07OErd0sbSQi/52cmlgyf8Am89EmCrrIcjiVIKW2u3j0MIGAEcWCjv60CEywAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon">
 <style>
+#loading { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999999999999999; }
+#loading #loader { position: absolute; width: 2.5rem; height: 2.5rem; left: 50%; top: 50%; margin-top: -2.5rem; margin-left: -2.5rem; }
 html { display: table; height: 100%; width: 100%; min-height: 100%; overflow: auto; }
 body { display: table-cell; vertical-align: middle; min-height: 100%; overflow: auto; background: #888; background: linear-gradient(#888,#333); background: -webkit-linear-gradient(#888,#333); padding-top: 38px; }
 .menu { display: block; top: 0; left: 0; height: 38px; z-index: 999999999; opacity: 0.5; -webkit-transition: opacity 0.5s; transition: opacity 0.5s; }
@@ -36,6 +38,10 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 </style>
 </head>
 <body>
+
+<div id="loading" class="bg-dark">
+<div id="loader" class="text-light"><p><i class="fa fa-4x fa-spin fa-spinner"></i></p>Loading...</div>
+</div>
 
 <div class="menu position-fixed align-items-center w-100">
 <div class="form-row no-gutters bg-dark p-1">
@@ -236,7 +242,8 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <b>Enjoy!</b>
 </p>
 <hr>
-<p class="mb-0"><small>&copy; 2018 <a href="https://www.xcartmods.co.uk" target="_blank">www.xcartmods.co.uk</a></small></p>
+<p><small>&copy; 2018 <a href="https://www.xcartmods.co.uk" target="_blank">www.xcartmods.co.uk</a></small></p>
+<p class="mb-0"><a href="https://github.com/xcartmods/Responsive-Previewer-Thingy" target="_blank"><i class="fa fa-2x fa-github"></i></a></p>
 </div>
 <div class="modal-footer bg-warning p-0">
 <button type="button" class="btn btn-block btn-info rounded-0 p-3" data-dismiss="modal"><b>OK</b></button>
@@ -251,6 +258,11 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 
 <script>
 $(function($) {
+
+$(window).on('load', function() {
+    $('#loader').fadeOut(1000);
+    $('#loading').delay(350).fadeOut('slow');
+});
 
 // https://github.com/kayahr/jquery-fullscreen-plugin
 function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.ownerDocument:(a=b,b=a.documentElement);if(null==c){if(!a.exitFullscreen&&!a.webkitExitFullscreen&&!a.webkitCancelFullScreen&&!a.msExitFullscreen&&!a.mozCancelFullScreen)return null;c=!!a.fullscreenElement||!!a.msFullscreenElement||!!a.webkitIsFullScreen||!!a.mozFullScreen;return!c?c:a.fullscreenElement||a.webkitFullscreenElement||a.webkitCurrentFullScreenElement||a.msFullscreenElement||a.mozFullScreenElement||c}c?(c=b.requestFullscreen||b.webkitRequestFullscreen||b.webkitRequestFullScreen||b.msRequestFullscreen||b.mozRequestFullScreen)&&c.call(b):(c=a.exitFullscreen||a.webkitExitFullscreen||a.webkitCancelFullScreen||a.msExitFullscreen||a.mozCancelFullScreen)&&c.call(a);return this}jQuery.fn.fullScreen=d;jQuery.fn.toggleFullScreen=function(){return d.call(this,!d.call(this))};var e,f,g;e=document;e.webkitCancelFullScreen?(f="webkitfullscreenchange",g="webkitfullscreenerror"):e.msExitFullscreen?(f="MSFullscreenChange",g="MSFullscreenError"):e.mozCancelFullScreen?(f="mozfullscreenchange",g="mozfullscreenerror"):(f="fullscreenchange",g="fullscreenerror");jQuery(document).bind(f,function(){jQuery(document).trigger(new jQuery.Event("fullscreenchange"))});jQuery(document).bind(g,function(){jQuery(document).trigger(new jQuery.Event("fullscreenerror"))});
