@@ -19,7 +19,6 @@ body { display: table-cell; vertical-align: middle; min-height: 100%; overflow: 
 .menu { display: block; top: 0; left: 0; height: 38px; z-index: 999999999; opacity: 0.5; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; transition: opacity 0.5s; }
 .menu:hover { opacity: 1; }
 .close-url { display: none; }
-input.url { -webkit-transition: width 0.5s; -moz-transition: width 0.5s; transition: width 0.5s; }
 .btn-label { display: none; }
 @media (max-width: 1599px) { display: inline-block; }
 .warning { height: auto; display: none; }
