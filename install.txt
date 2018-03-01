@@ -1,0 +1,43 @@
+======================================
+The Responsive Previewer Thingy v1.0.2
+© 2018 https://www.xcartmods.co.uk
+======================================
+
+A tool to help with responsive layouts
+
+- To simulate touch events, open your browser inspector
+- If an entered URL doesn't work, check your browser console
+- You can easily add more devices / breakpoints if you wish
+- You can manually resize the preview using the bottom right handle
+- The minimum custom width / height is 320px
+
+Enjoy!
+
+
+=======
+Install
+=======
+
+Upload preview.php to your site root, then run preview.php in your browser.
+
+
+=====
+NOTES
+=====
+
+- If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE (change back to TRUE after you have done your testing)
+  https://help.x-cart.com/index.php?title=X-Cart:Config.php#Blocking_IFRAME_.2F_FRAME_calls
+
+- URLs with 'X-Frame-Options' set to 'sameorigin' will not be previewable
+  https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+
+
+=========
+CHANGELOG
+=========
+
+28/02/18 - v1.0.2 - Final version, tidied up, minor fixes, images now embedded with base64.
+
+27/02/18 - v1.0.1 - Preview frame now has an optional bottom-right resize handle, initial device can be set, minor fixes.
+
+22/02/18 - v1.0 - Initial release.
