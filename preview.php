@@ -35,6 +35,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 #preview.ui-resizable-resizing { -webkit-transition: all 0s !important; transition: all 0s !important; }
 .ui-resizable-ghost { background: none !important; }
 .ui-resizable-helper { }
+.modal-dialog { margin-top: 38px; }
 </style>
 </head>
 <body>
