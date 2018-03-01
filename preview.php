@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMjgvMTgh9jS1AAAAdklEQVQ4je2SsQ2AMAwEPyirpMhO2cR1NkiRzVxkmKdAIAQBjECi4UrLfr3+7UhiTa2VqgoLMUb47VBVkXM2CYgIBtPmCd8LeGAfnIgAmEJKKV07OErd0sbSQi/52cmlgyf8Am89EmCrrIcjiVIKW2u3j0MIGAEcWCjv60CEywAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon">
+<link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMjgvMTgh9jS1AAAAdklEQVQ4je2SsQ2AMAwEPyirpMhO2cR1NkiRzVxkmKdAIAQBjECi4UrLfr3+7UhiTa2VqgoLMUb47VBVkXM2CYgIBtPmCd8LeGAfnIgAmEJKKV07OErd0sbSQi/52cmlgyf8Am89EmCrrIcjiVIKW2u3j0MIGAEcWCjv60CEywAAAABJRU5ErkJggg==">
 <style>
 #loading { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999999999999999; }
 #loading #loader { position: absolute; top: 50%; left: 50%; width: 2.5rem; height: 2.5rem; margin-top: -2.5rem; margin-left: -2.5rem; }
@@ -262,7 +262,7 @@ $(function($) {
 
 $(window).on('load', function() {
     $('#loader').fadeOut(1000);
-    $('#loading').delay(350).fadeOut('slow');
+    $('#loading').delay(500).fadeOut('slow');
 });
 
 // https://github.com/kayahr/jquery-fullscreen-plugin
@@ -437,7 +437,8 @@ function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.
 	});
 
 	$('a.fullscreen-toggle').clickToggle(function() {
-		$(document).fullScreen(true);
+		$(document).toggleFullScreen(true);
+		$(this).css('pointer-events', 'none');
 		$('a.fullscreen-toggle i').removeClass('fa-window-restore').addClass('fa-window-maximize');
 		$('a.fullscreen-toggle').addClass('pointer-events-none');
 		setTimeout(function(){ 
