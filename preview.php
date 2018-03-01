@@ -36,6 +36,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 .ui-resizable-ghost { background: none !important; }
 .ui-resizable-helper { }
 .modal-dialog { margin-top: 38px; }
+.pointer-events-none { pointer-events: none; }
 </style>
 </head>
 <body>
@@ -400,6 +401,10 @@ function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.
 		var thisHeight = parseFloat($("input.deviceH").val()) + border;
 		$('.landscape').css('width', thisWidth + 'px').css('height', thisHeight + 'px');
 		$('i.fa-mobile').toggleClass('fa-rotate-90');
+		$('a.rotate').addClass('pointer-events-none');
+		setTimeout(function(){ 
+			$('a.rotate').removeClass('pointer-events-none');
+		}, 500);
 	}, function() {
 		$('#preview').removeClass('landscape').addClass('portrait');
 		var tempWidth = parseFloat($("input.deviceW").val());
@@ -410,22 +415,42 @@ function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.
 		var thisHeight = parseFloat($("input.deviceH").val()) + border;
 		$('.portrait').css('width', thisWidth + 'px').css('height', thisHeight + 'px');
 		$('i.fa-mobile').toggleClass('fa-rotate-90');
+		$('a.rotate').addClass('pointer-events-none');
+		setTimeout(function(){ 
+			$('a.rotate').removeClass('pointer-events-none');
+		}, 500);
 	});
 
 	$('a.scale-down').clickToggle(function() {
 		$('#preview').addClass('scale-down');
 		$('a.scale-down i').removeClass('fa-compress').addClass('fa-expand');
+		$('a.scale-down').addClass('pointer-events-none');
+		setTimeout(function(){ 
+			$('a.scale-down').removeClass('pointer-events-none');
+		}, 500);
 	}, function() {
 		$('#preview').removeClass('scale-down');
 		$('a.scale-down i').removeClass('fa-expand').addClass('fa-compress');
+		$('a.scale-down').addClass('pointer-events-none');
+		setTimeout(function(){ 
+			$('a.scale-down').removeClass('pointer-events-none');
+		}, 500);
 	});
 
 	$('a.fullscreen-toggle').clickToggle(function() {
-		$(document).fullScreen(true);
+		$(this).css('pointer-events', 'none');
 		$('a.fullscreen-toggle i').removeClass('fa-window-restore').addClass('fa-window-maximize');
+		$('a.fullscreen-toggle').addClass('pointer-events-none');
+		setTimeout(function(){ 
+			$('a.fullscreen-toggle').removeClass('pointer-events-none');
+		}, 500);
 	}, function() {
 		$(document).fullScreen(false);
 		$('a.fullscreen-toggle i').removeClass('fa-window-maximize').addClass('fa-window-restore');
+		$('a.fullscreen-toggle').addClass('pointer-events-none');
+		setTimeout(function(){ 
+			$('a.fullscreen-toggle').removeClass('pointer-events-none');
+		}, 500);
 	});
 
 	$('a.refresh-iframe').on('click', function(){
