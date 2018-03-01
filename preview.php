@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex">
 <title>The Responsive Previewer Thingy v1.0.2</title>
 <meta name="description" content="The Responsive Previewer Thingy v1.0.2. A tool to help test responsive layouts. Online alternative to browser inspectors.">
@@ -28,7 +28,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 #preview.scale-down { transform: scale(0.6); -webkit-transform: scale(0.6); transform-origin: 0 0; -webkit-transform-origin: 0 0; margin: 5px auto 0 auto !important; -webkit-font-smoothing: subpixel-antialiased; }
 .ui-resizable { border: none; }
 .ui-resizable-handle { border: 0px solid red; }
-.ui-resizable-se { position: relative: z-index: 9999999; border: none; bottom: 0px; right: 16px; width: 16px; height: 16px; background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAADFJREFUeF4VyLENACAIAEFtHMIRGYkBSGBKvS++uPXbduxaoEGNCiUKNKhRoUSBGtUDmXYQ/0/Lg94AAAAASUVORK5CYII=') center center no-repeat !important; }
+.ui-resizable-se { position: relative; z-index: 9999999; border: none; bottom: 0px; right: 16px; width: 16px; height: 16px; background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAADFJREFUeF4VyLENACAIAEFtHMIRGYkBSGBKvS++uPXbduxaoEGNCiUKNKhRoUSBGtUDmXYQ/0/Lg94AAAAASUVORK5CYII=') center center no-repeat !important; }
 .ui-resizable-se:hover { cursor: se-resize !important; }
 #preview.ui-resizable-resizing { -webkit-transition: all 0s !important; transition: all 0s !important; }
 .ui-resizable-ghost { background: none !important; }
@@ -178,7 +178,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <option data-width="1024" data-height="800">Large (W1024)</option>
 </optgroup>
 
-<select>
+</select>
 
 <div class="input-group-append go-desktop dimensions"><a href="javascript:;" class="btn btn-primary" title="Back to Desktop"><i class="fa fa-desktop" aria-hidden="true"></i></a></div>
 
@@ -219,7 +219,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <div class="warning hidden bg-warning text-center p-2"><i class="fa fa-warning text-danger" aria-hidden="true"></i> Intended for use on large screens, 1280px or above... Please resize your browser, or <a class="btn btn-sm btn-danger" href="./">Exit</a></div>
 
 <div id="preview" class="ui-widget-content portrait">
-<iframe src="./" scrolling="yes" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+<iframe src="./"></iframe>
 </div>
 
 <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="about" aria-hidden="true">
@@ -231,7 +231,6 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <div class="modal-body text-center px-0">
 <p class="lead text-weight-bold"><em>A tool to help test responsive layouts</em></p>
 <hr>
-<p>
 <small>To simulate touch events, open your browser inspector</small><br>
 <small>If an entered URL doesn't work, check your browser console</small><br>
 <small>You can easily add more devices / breakpoints if you wish</small><br>
@@ -240,7 +239,6 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <small><a href="https://goo.gl/1owSGx" target="_blank">Devices Reference</a></small>
 <hr>
 <b>Enjoy!</b>
-</p>
 <hr>
 <p><small>&copy; 2018 <a href="https://www.xcartmods.co.uk" target="_blank">www.xcartmods.co.uk</a></small></p>
 <p class="mb-0"><a href="https://github.com/xcartmods/Responsive-Previewer-Thingy" target="_blank"><i class="fa fa-2x fa-github"></i></a></p>
