@@ -52,7 +52,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <div class="input-group input-group-sm">
 <div class="input-group-prepend"><span class="input-group-text bg-secondary text-light border-0">URL</span></div>
 <div class="input-group-append close-url"><button class="btn btn-sm btn-danger" type="button" title="Close"><i class="fa fa-times" aria-hidden="true"></i></button></div>
-<input class="form-control form-control-sm url" type="text" name="url" value="<?php echo "https://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).""; ?>" required>
+<input class="form-control form-control-sm url" type="text" name="url" value="<?php if ($_GET['url']) { echo $_GET['url']; } else { echo "https://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF']).""; } ?>" required>
 <div class="input-group-append"><button class="btn btn-sm btn-primary" type="submit" title="GO"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></div>
 </div>
 </form>
