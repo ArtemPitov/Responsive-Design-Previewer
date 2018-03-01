@@ -1,6 +1,6 @@
 ======================================
 The Responsive Previewer Thingy v1.0.2
-© 2018 https://www.xcartmods.co.uk
+Â© 2018 https://www.xcartmods.co.uk
 ======================================
 
 A tool to help with responsive layouts
@@ -36,8 +36,15 @@ NOTES
 CHANGELOG
 =========
 
-28/02/18 - v1.0.2 - Final version, tidied up, minor fixes, images now embedded with base64.
+28/02/18 - v1.0.2 - Final version, tidied up, minor fixes, images now embedded, URL input field full width on click.
 
 27/02/18 - v1.0.1 - Preview frame now has an optional bottom-right resize handle, initial device can be set, minor fixes.
 
 22/02/18 - v1.0 - Initial release.
+
+
+======
+GITHUB
+======
+
+https://github.com/xcartmods/Responsive-Previewer-Thingy
