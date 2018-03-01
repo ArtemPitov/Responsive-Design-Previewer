@@ -437,6 +437,7 @@ function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.
 	});
 
 	$('a.fullscreen-toggle').clickToggle(function() {
+		$(document).toggleFullScreen(true);
 		$(this).css('pointer-events', 'none');
 		$('a.fullscreen-toggle i').removeClass('fa-window-restore').addClass('fa-window-maximize');
 		$('a.fullscreen-toggle').addClass('pointer-events-none');
