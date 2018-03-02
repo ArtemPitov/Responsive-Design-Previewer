@@ -2,8 +2,8 @@
 
 ## A tool to help test responsive layouts
 
-Upload preview.php and run
+Upload preview.php and run https://site.com/preview.php
 
-Go directly to an url with preview.php?url=https://site.com
+Go directly to a URL by adding ?url=https://site.com/whatever.html
 
 Demo - https://www.xcartmods.co.uk/preview.php?url=https://getbootstrap.com
