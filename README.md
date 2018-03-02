@@ -1,6 +1,6 @@
 # Responsive Previewer Thingy v1.0.2
 
-A tool to help test responsive layouts
+## A tool to help test responsive layouts
 
 Upload preview.php and run
 
