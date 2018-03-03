@@ -14,7 +14,7 @@
 <style>
 #loading { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999999999999999; }
 #loading #loader { position: absolute; top: 50%; left: 50%; width: 2.5rem; height: 2.5rem; margin-top: -2.5rem; margin-left: -2.5rem; }
-html { display: table; height: 100%; width: 100%; min-height: 100%; overflow: auto; }
+html { display: table; width: 100vw; height: 100vh; min-height: 100%; overflow: auto; }
 body { display: table-cell; vertical-align: middle; min-height: 100%; overflow: auto; background: #888; background: linear-gradient(#888,#333); background: -webkit-linear-gradient(#888,#333); padding-top: 38px; }
 .menu { display: block; top: 0; left: 0; height: 38px; z-index: 999999999; opacity: 0.5; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; }
 .menu:hover { opacity: 1; }
@@ -28,7 +28,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 #preview.scale-down { transform: scale(0.6); -webkit-transform: scale(0.6); transform-origin: 0 0; -webkit-transform-origin: 0 0; margin: 5px auto 0 auto !important; -webkit-font-smoothing: subpixel-antialiased; }
 .ui-resizable { border: none; }
 .ui-resizable-handle { border: 0px solid red; }
-.ui-resizable-se { position: relative; z-index: 9999999; border: none; bottom: 0px; right: 16px; width: 16px; height: 16px; background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAADFJREFUeF4VyLENACAIAEFtHMIRGYkBSGBKvS++uPXbduxaoEGNCiUKNKhRoUSBGtUDmXYQ/0/Lg94AAAAASUVORK5CYII=') center center no-repeat !important; }
+.ui-resizable-se { z-index: 9999999; border: none; bottom: 0px; right: 16px; width: 16px; height: 16px; background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAADFJREFUeF4VyLENACAIAEFtHMIRGYkBSGBKvS++uPXbduxaoEGNCiUKNKhRoUSBGtUDmXYQ/0/Lg94AAAAASUVORK5CYII=') center center no-repeat !important; }
 .ui-resizable-se:hover { cursor: se-resize !important; }
 #preview.ui-resizable-resizing { -webkit-transition: all 0s !important; transition: all 0s !important; }
 .ui-resizable-ghost { background: none !important; }
@@ -199,26 +199,19 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 </div>
 </div>
 
-<div class="col col-hide col-hide-desktop dimensions"><a class="btn btn-sm btn-primary btn-block rotate dimensions" href="javascript:;" title="Toggle Orientation"><i class="fa fa-mobile fa-rotate-90" aria-hidden="true"></i><span class="btn-label pl-1">Rotate</span></a></div>
-
-<div class="col col-hide col-hide-desktop dimensions"><a class="btn btn-sm btn-primary btn-block scale-down dimensions" href="javascript:;" title="Toggle Scale"><i class="fa fa-compress" aria-hidden="true"></i><span class="btn-label pl-1">Toggle Scale</span></a></div>
-
-<div class="col col-hide"><a class="btn btn-sm btn-primary btn-block fullscreen-toggle" href="javascript:;" title="Toggle Fullscreen"><i class="fa fa-window-restore" aria-hidden="true"></i><span class="btn-label pl-1">Toggle Fullscreen</span></a></div>
-
-<div class="col col-hide"><a class="btn btn-sm btn-primary btn-block refresh-iframe" href="javascript:;" title="Refresh Page"><i class="fa fa-refresh" aria-hidden="true"></i><span class="btn-label pl-1">Refresh Page</span></a></div>
-
-<!--<div class="col col-hide"><a class="btn btn-sm btn-primary btn-block" href="preview.php" title="Back to Home"><i class="fa fa-home" aria-hidden="true"></i><span class="btn-label pl-1">Back to Home</span></a></div>-->
-
-<div class="col col-hide"><a class="btn btn-sm btn-block btn-danger remove-iframe" href="javascript:;" title="Close Previewer"><i class="fa fa-times-circle" aria-hidden="true"></i><span class="btn-label pl-1">Close Previewer</span></a></div>
-
-<div class="col col-hide"><a class="btn btn-sm btn-block btn-info" href="javascript:;" title="About" data-toggle="modal" data-target="#about"><i class="fa fa-info-circle" aria-hidden="true"></i><span class="btn-label pl-1">About</span></a></div>
+<div class="col col-hide col-hide-desktop dimensions"><a class="btn btn-sm btn-primary btn-block rotate dimensions" href="javascript:;" title="Toggle Orientation"><i class="fa fa-mobile fa-rotate-90" aria-hidden="true"></i></a></div>
+<div class="col col-hide col-hide-desktop dimensions"><a class="btn btn-sm btn-primary btn-block scale-down dimensions" href="javascript:;" title="Toggle Scale"><i class="fa fa-compress" aria-hidden="true"></i></a></div>
+<div class="col col-hide"><a class="btn btn-sm btn-primary btn-block fullscreen-toggle" href="javascript:;" title="Toggle Fullscreen"><i class="fa fa-window-restore" aria-hidden="true"></i></a></div>
+<div class="col col-hide"><a class="btn btn-sm btn-primary btn-block refresh-iframe" href="javascript:;" title="Refresh Page"><i class="fa fa-refresh" aria-hidden="true"></i></a></div>
+<div class="col col-hide"><a class="btn btn-sm btn-block btn-danger remove-iframe" href="javascript:;" title="Close Previewer"><i class="fa fa-times-circle" aria-hidden="true"></i></a></div>
+<div class="col col-hide"><a class="btn btn-sm btn-block btn-info" href="javascript:;" title="About" data-toggle="modal" data-target="#about"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
 
 </div>
 </div>
 
 <div class="warning hidden bg-warning text-center p-2"><i class="fa fa-warning text-danger" aria-hidden="true"></i> Intended for use on large screens, 1280px or above... Please resize your browser, or <a class="btn btn-sm btn-danger" href="./">Exit</a></div>
 
-<div id="preview" class="ui-widget-content portrait">
+<div id="preview" class="portrait">
 <iframe src="./"></iframe>
 </div>
 
