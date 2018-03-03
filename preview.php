@@ -342,8 +342,8 @@ function d(c){var b,a;if(!this.length)return this;b=this[0];b.ownerDocument?a=b.
 					resize: function(event, ui) {
 					},
 					stop: function(event, ui) {
-						$('input.deviceW').val($(this).width() - scrollbar);
-						$('input.deviceH').val($(this).height());
+						$('input.deviceW').val($(".ui-resizable-helper").width() - scrollbar);
+						$('input.deviceH').val($(".ui-resizable-helper").height());
 						$('iframe').css('display', 'block');
 					}
 				});
