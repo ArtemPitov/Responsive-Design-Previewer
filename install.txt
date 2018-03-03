@@ -31,18 +31,6 @@ NOTES
 - URLs with 'X-Frame-Options' set to 'sameorigin' will not be previewable
   https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 
-
-=========
-CHANGELOG
-=========
-
-28/02/18 - v1.0.2 - Final version, tidied up, minor fixes, images now embedded, URL input field full width on click.
-
-27/02/18 - v1.0.1 - Preview frame now has an optional bottom-right resize handle, initial device can be set, minor fixes.
-
-22/02/18 - v1.0 - Initial release.
-
-
 ======
 GITHUB
 ======
