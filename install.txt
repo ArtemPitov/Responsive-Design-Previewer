@@ -1,7 +1,7 @@
-======================================
-The Responsive Previewer Thingy v1.0.2
+==================================
+Responsive Design Previewer v1.0.2
 © 2018 https://www.xcartmods.co.uk
-======================================
+==================================
 
 A tool to help with responsive layouts
 
@@ -40,4 +40,4 @@ Header set X-Frame-Options "ALLOW-FROM https://site.com"
 GITHUB
 ======
 
-https://github.com/xcartmods/Responsive-Previewer-Thingy
+https://github.com/xcartmods/Responsive-Design-Previewer
