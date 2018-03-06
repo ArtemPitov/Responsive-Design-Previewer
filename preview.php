@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex">
-<title>The Responsive Previewer Thingy v1.0.2</title>
-<meta name="description" content="The Responsive Previewer Thingy v1.0.2. A tool to help test responsive layouts. Online alternative to browser inspectors.">
+<title>Responsive Design Previewer</title>
+<meta name="description" content="The Responsive Previewer v1.0.2. A tool to help test responsive layouts. Online alternative to browser inspectors.">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -219,7 +219,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <div class="modal-dialog modal-dialog-centered" role="document">
 <div class="modal-content">
 <div class="modal-header bg-info text-light rounded-0 justify-content-center">
-<h5 class="modal-title text-center">The Responsive Previewer Thingy <span class="badge badge-pill badge-light">v1.0.2</span></h5>
+<h5 class="modal-title text-center">Responsive Design Previewer <span class="badge badge-pill badge-light">v1.0.2</span></h5>
 </div>
 <div class="modal-body text-center px-0">
 <p class="lead text-weight-bold"><em>A tool to help test responsive layouts</em></p>
@@ -234,7 +234,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <b>Enjoy!</b>
 <hr>
 <p><small>&copy; 2018 <a href="https://www.xcartmods.co.uk" target="_blank">www.xcartmods.co.uk</a></small></p>
-<p class="mb-0"><a href="https://github.com/xcartmods/Responsive-Previewer-Thingy" target="_blank"><i class="fa fa-2x fa-github"></i></a></p>
+<p class="mb-0"><a href="https://github.com/xcartmods/Responsive-Design-Previewer" target="_blank"><i class="fa fa-2x fa-github"></i></a></p>
 </div>
 <div class="modal-footer bg-warning p-0">
 <button type="button" class="btn btn-block btn-info rounded-0 p-3" data-dismiss="modal"><b>OK</b></button>
