@@ -22,13 +22,13 @@ Demo - **https://www.xcartmods.co.uk/preview.php?url=https://getbootstrap.com**
 
 Ensure the http protocol is the same.
 
-X-Cart stores - If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE (change back to TRUE after you have done your testing)
+**X-Cart stores** - If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE (change back to TRUE after you have done your testing)
 https://help.x-cart.com/index.php?title=X-Cart:Config.php#Blocking_IFRAME_.2F_FRAME_calls
 
 URLs with 'X-Frame-Options' set to 'sameorigin' will not be previewable
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   
-**Apache .htaccess**
+**Apache .htaccess override code...**
 
 Header set X-Frame-Options DENY
 Header set X-Frame-Options "ALLOW-FROM https://site.com"
