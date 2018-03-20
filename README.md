@@ -22,6 +22,10 @@ Ensure the http protocols are the same for preview.php and the preview URL.
 
 ---
 
+The 'refresh' and 'close' buttons will only function if the URL is same domain.
+
+---
+
 External URLs with 'X-Frame-Options' set to 'sameorigin' may not be previewable.
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
