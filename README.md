@@ -18,6 +18,8 @@ Demo - **https://www.xcartmods.co.uk/preview.php?url=https://getbootstrap.com**
 
 **Enjoy!**
 
+---
+
 Ensure the http protocol is the same.
 
 X-Cart stores - If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE (change back to TRUE after you have done your testing)
