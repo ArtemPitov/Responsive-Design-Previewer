@@ -1,6 +1,6 @@
 # Responsive Web Design Previewer / Simulator / Tester v1.0.2
 
-## A tool to help test responsive layouts
+## A tool to help test responsive layouts across many device resolutions
 
 Upload preview.php and run in your browser.
 
