@@ -37,6 +37,6 @@ https://help.x-cart.com/index.php?title=X-Cart:Config.php#Blocking_IFRAME_.2F_FR
 
 https://github.com/xcartmods/Responsive-Design-Previewer
 
-&copy; 2018 xcartmods.co.uk
+&copy; 2018 https://www.xcartmods.co.uk
 
 **Enjoy!**
