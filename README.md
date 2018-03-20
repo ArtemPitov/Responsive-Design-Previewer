@@ -4,7 +4,7 @@
 
 Upload preview.php and run in your browser.
 
-Go directly to a URL by adding **?url=somesite.com/whatever.html**
+Go directly to any URL by adding **?url=somesite.com/whatever.html**
 
 **Demo - https://www.xcartmods.co.uk/preview.php?url=https://getbootstrap.com**
 
@@ -20,7 +20,7 @@ Go directly to a URL by adding **?url=somesite.com/whatever.html**
 
 Ensure the http protocols are the same.
 
-URLs with 'X-Frame-Options' set to 'sameorigin' will not be previewable.
+External URLs with 'X-Frame-Options' set to 'sameorigin' may not be previewable.
 
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   
