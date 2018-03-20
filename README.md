@@ -22,7 +22,7 @@ Ensure the http protocols are the same for preview.php and the preview URL.
 
 ---
 
-The 'refresh' and 'close' buttons will only function if the parent and preview URLs are on the same domain.
+The 'refresh' and 'close' buttons will only function if the parent and preview URLs are from the same domain.
 
 ---
 
