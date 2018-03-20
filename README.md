@@ -35,9 +35,9 @@ Header set X-Frame-Options "ALLOW-FROM https://site.com"
 
 https://help.x-cart.com/index.php?title=X-Cart:Config.php#Blocking_IFRAME_.2F_FRAME_calls
 
-https://github.com/xcartmods/Responsive-Design-Previewer
-
 ---
+
+https://github.com/xcartmods/Responsive-Design-Previewer
 
 &copy; 2018 https://www.xcartmods.co.uk
 
