@@ -39,7 +39,7 @@ Header set X-Frame-Options "ALLOW-FROM https://site.com"
 
 ---
 
-**X-Cart stores** - If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE
+**X-Cart v4.x Stores** - If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE
 
 (Change back to TRUE after you have done your testing)
 
