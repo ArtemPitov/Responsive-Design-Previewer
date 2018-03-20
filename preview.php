@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index">
+<meta name="robots" content="noindex,nofollow">
 <title>Responsive Design Previewer - Simulator - Viewer - Tester</title>
 <meta name="description" content="A tool to help test / simulate responsive layouts in different resolutions, iphone, ipad etc. Online alternative to browser inspectors.">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
