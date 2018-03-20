@@ -18,7 +18,9 @@ Go directly to any URL by adding **?url=somesite.com/whatever.html**
 
 ---
 
-Ensure the http protocols are the same.
+Ensure the http protocols are the same for preview.php and the preview URL.
+
+---
 
 External URLs with 'X-Frame-Options' set to 'sameorigin' may not be previewable.
 
@@ -30,6 +32,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 Header set X-Frame-Options DENY
 Header set X-Frame-Options "ALLOW-FROM https://site.com"
 ```
+
+---
 
 **X-Cart stores** - If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE (change back to TRUE after you have done your testing).
 
