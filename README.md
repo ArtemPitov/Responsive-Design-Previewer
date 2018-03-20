@@ -30,8 +30,8 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
   
 **Apache .htaccess override code...**
 
-```Header set X-Frame-Options DENY```
-```Header set X-Frame-Options "ALLOW-FROM https://site.com"```
+```Header set X-Frame-Options DENY
+Header set X-Frame-Options "ALLOW-FROM https://site.com"```
 
 https://github.com/xcartmods/Responsive-Design-Previewer
 
