@@ -20,7 +20,7 @@ Go directly to a URL by adding **?url=somesite.com/whatever.html**
 
 ---
 
-Ensure the http protocol is the same.
+Ensure the http protocols are the same.
 
 **X-Cart stores** - If it doesn't work, in config.php, check FRAME_NOT_ALLOWED is set to FALSE (change back to TRUE after you have done your testing)
 https://help.x-cart.com/index.php?title=X-Cart:Config.php#Blocking_IFRAME_.2F_FRAME_calls
