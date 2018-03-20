@@ -1,4 +1,4 @@
-# Responsive Design Previewer v1.0.2
+# Responsive Web Design Previewer / Simulator / Tester v1.0.2
 
 ## A tool to help test responsive layouts
 
