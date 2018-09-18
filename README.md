@@ -1,10 +1,10 @@
-# Responsive Web Design Previewer / Simulator / Tester v1.0.2
+# Responsive Web Design Previewer / Simulator / Tester v1.0.3
 
 ## A tool to help test responsive layouts across many device resolutions
 
 Upload preview.php and run in your browser.
 
-Go directly to any URL by adding **?url=somesite.com/whatever.html**
+Go directly to any URL by adding **?url=http://somesite.com/whatever.html**
 
 **Demo - https://www.xcartmods.co.uk/preview.php?url=https://getbootstrap.com**
 
