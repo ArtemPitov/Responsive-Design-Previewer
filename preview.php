@@ -7,8 +7,8 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Responsive Design Previewer - Simulator - Emulator - Viewer - Tester</title>
 <meta name="description" content="A tool to help test / simulate responsive layouts in different resolutions, iphone, ipad etc. Online alternative to browser inspectors.">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMjgvMTgh9jS1AAAAdklEQVQ4je2SsQ2AMAwEPyirpMhO2cR1NkiRzVxkmKdAIAQBjECi4UrLfr3+7UhiTa2VqgoLMUb47VBVkXM2CYgIBtPmCd8LeGAfnIgAmEJKKV07OErd0sbSQi/52cmlgyf8Am89EmCrrIcjiVIKW2u3j0MIGAEcWCjv60CEywAAAABJRU5ErkJggg==">
 <style>
@@ -223,7 +223,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <div class="modal-dialog modal-dialog-centered" role="document">
 <div class="modal-content">
 <div class="modal-header bg-info text-light rounded-0 justify-content-center">
-<h5 class="modal-title text-center">Responsive Design Previewer <span class="badge badge-pill badge-light">v1.0.2</span></h5>
+<h5 class="modal-title text-center">Responsive Design Previewer <span class="badge badge-pill badge-light">v1.0.3</span></h5>
 </div>
 <div class="modal-body text-center px-0">
 <p class="lead text-weight-bold"><em>A tool to help test responsive layouts</em></p>
@@ -248,7 +248,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
 <script>
