@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Responsive Design Previewer - Simulator - Emulator - Viewer - Tester</title>
 <meta name="description" content="A tool to help test / simulate responsive layouts in different resolutions, iphone, ipad etc. Online alternative to browser inspectors.">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDIvMjgvMTgh9jS1AAAAdklEQVQ4je2SsQ2AMAwEPyirpMhO2cR1NkiRzVxkmKdAIAQBjECi4UrLfr3+7UhiTa2VqgoLMUb47VBVkXM2CYgIBtPmCd8LeGAfnIgAmEJKKV07OErd0sbSQi/52cmlgyf8Am89EmCrrIcjiVIKW2u3j0MIGAEcWCjv60CEywAAAABJRU5ErkJggg==">
@@ -233,7 +233,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <small>You can easily add more devices / breakpoints if you wish</small><br>
 <small>You can manually resize the preview using the bottom right handle</small><br>
 <small>The minimum custom width / height is 320px</small><br>
-<small><a href="https://goo.gl/1owSGx" target="_blank">Devices Reference</a></small>
+<small><a href="https://www.mydevice.io/#compare-devices" rel="nofollow" target="_blank">Devices Reference</a></small>
 <hr>
 <b>Enjoy!</b>
 <hr>
@@ -248,7 +248,7 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 
 <script>
