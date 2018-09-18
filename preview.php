@@ -207,8 +207,8 @@ iframe { width: 100%; height: 100%; outline: 0; border: 0; }
 <div class="col col-hide col-hide-desktop dimensions"><a class="btn btn-sm btn-primary btn-block scale-down dimensions" href="javascript:;" title="Toggle Scale"><i class="fa fa-compress" aria-hidden="true"></i></a></div>
 <div class="col col-hide"><a class="btn btn-sm btn-primary btn-block fullscreen-toggle" href="javascript:;" title="Toggle Fullscreen"><i class="fa fa-window-restore" aria-hidden="true"></i></a></div>
 <div class="col col-hide"><a class="btn btn-sm btn-primary btn-block refresh-iframe" href="javascript:;" title="Refresh Page"><i class="fa fa-refresh" aria-hidden="true"></i></a></div>
-<div class="col col-hide"><a class="btn btn-sm btn-block btn-danger remove-iframe" href="javascript:;" title="Close Previewer"><i class="fa fa-times-circle" aria-hidden="true"></i></a></div>
 <div class="col col-hide"><a class="btn btn-sm btn-block btn-info" href="javascript:;" title="About" data-toggle="modal" data-target="#about"><i class="fa fa-info-circle" aria-hidden="true"></i></a></div>
+<div class="col col-hide"><a class="btn btn-sm btn-block btn-danger remove-iframe" href="javascript:;" title="Close Previewer"><i class="fa fa-times-circle" aria-hidden="true"></i></a></div>
 
 </div>
 </div>
